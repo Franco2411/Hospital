@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">S. R. Citas</string>
+    <string name="tvEmail">E-mail</string>
+    <string name="tvContra">Contraseña</string>
+    <string name="tvInicio">Inicio de Sesión</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="tvRegistro">¿No tienes cuenta? Click aquí</string>
+    <string name="lblRegistro">Registrarse</string>
+    <string name="btnRegistrarse">Confirmar registro</string>
+    <string name="tvNombre">Nombre completo</string>
+    <string name="btnCita">Reservar cita</string>
+    <string name="btnMisCitas">Mis citas</string>
+    <string name="btnLogOut">Cerrar sesión</string>
+    <string name="tvBienvenido">Bienvenido</string>
+    <string name="lblDescripcion">Descripción:</string>
+    <string name="lblEspe">Especialidad:</string>
+    <string name="lblTipoCita">Tipo de cita:</string>
+    <string name="lblConsulta">Consulta</string>
+    <string name="lblExamen">Examen</string>
+    <string name="lblOperacion">Operación</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="lblMedico">Médico:</string>
+    <string name="txtDescripcion">Describa su consulta(opcional)</string>
+    <string name="lblFechaCita">Fecha para la cita:</string>
+    <string name="btnConfirmRegistro">Confirmar registro</string>
+    <string-array name="horas">
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+    </string-array>
+    <string-array name="amPm">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string name="date_format">%1$d/%2$d/%3$d</string>
+    <string name="hora1">08:00 AM</string>
+    <string name="item_cita_id">Turno médico N°%1$d</string>
+    <string name="item_cita_doctorName">Doctor: %1$s</string>
+    <string name="item_cita_diaCita">Día del turno: %1$s</string>
+    <string name="item_cita_horaCita">Horario: %1$s</string>
+    <string name="lblMisTurnosMédicos">Mis turnos médicos</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta? Click aquí</string>
+    <string name="presione_again">Presione otra vez para salir.</string>
+</resources>

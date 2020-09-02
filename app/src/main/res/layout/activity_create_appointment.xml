@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:text="@string/btnCita" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:padding="12dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lblDescripcion"
+                android:textColor="@android:color/background_dark" />
+
+            <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/txtDescripcion"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="@android:color/darker_gray"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lblEspe"
+                android:textColor="@android:color/background_dark" />
+
+            <Spinner
+                android:id="@+id/spinnerEspe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#000000"
+                android:popupBackground="@color/cardview_light_background"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/lblTipoCita"
+                android:textColor="@android:color/background_dark" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/lblConsulta"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@android:color/holo_blue_dark"
+                    android:buttonTint="@color/colorPrimary"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/lblExamen"
+                    android:textColor="@android:color/background_dark"
+                    android:buttonTint="@color/colorPrimary"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/lblOperacion"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:buttonTint="@color/colorPrimary"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/ic_next"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="@string/btnSiguiente"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="10dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:padding="12dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/lblMedico"
+                android:textColor="@android:color/background_dark" />
+
+            <Spinner
+                android:id="@+id/spinnerMedico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#000000"
+                android:popupBackground="@color/cardview_light_background"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblFechaCita"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/txtFechaCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/background_dark"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/rbhora1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="@string/hora1"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@android:color/holo_blue_dark" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnConfirmRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/ic_check"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="@string/btnConfirmRegistro" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

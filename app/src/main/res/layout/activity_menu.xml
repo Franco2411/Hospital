@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menuLayout"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textColor="#ffffff"
+        android:text="@string/tvBienvenido" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/btnRegistroCita"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="@string/btnCita"
+        android:drawableStart="@drawable/ic_add_circulo"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/btnMisCitas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="@string/btnMisCitas"
+        android:drawableStart="@drawable/ic_calendar_icono"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="@string/btnLogOut"
+        android:drawableStart="@drawable/ic_power_off"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"/>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"    
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="3dp"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNumCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Cita médica #7"/>
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Médico Test"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvDiaCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="El día de su cita es el 05/08/2020"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvHoraCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="3:00 PM"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
